@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@layer components {
+  .badge-center {
+    @apply absolute flex items-center justify-center w-5 h-5 rounded-full -top-2 -right-2 text-white text-xs;
+  }
+}
+@layer components {
+  .hz-line {
+    @apply w-[1px] h-5 bg-white;
+  }
+}
+@layer components {
+  .card-body {
+    @apply col-span-1 flex justify-between items-center bg-[#F5F3FF] p-4 rounded-xl;
+  }
+}
+@layer components {
+  .card-progress {
+    @apply w-20 h-20 rounded-full bg-black flex items-center justify-center;
+  }
+}
+@layer components {
+  .table-header {
+    @apply text-gray-500 text-xs font-semibold font-['Inter'] p-4 uppercase leading-[18px];
+  }
+}
+@layer components {
+  .card-border {
+    @apply border border-[#EDE9FE] p-2 rounded-lg;
+  }
+}
